@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/interAd"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textAllCaps="false"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/txt_scale"
+        android:text="Interstitial"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:layout_toRightOf="@id/txt_scale"
+        android:id="@+id/rewardAd"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Rewarded"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2125877317262547/8428983656">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
